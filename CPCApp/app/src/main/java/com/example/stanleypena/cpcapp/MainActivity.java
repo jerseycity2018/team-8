@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.graphics.Bitmap;
+import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button camera;
     Button urcode;
+    ImageView hardCode1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         camera = findViewById(R.id.camerab);
         urcode = findViewById(R.id.urb);
+        hardCode1 = findViewById(R.id.imageView);
 
         camera.setOnClickListener(this);
         urcode.setOnClickListener(this);
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            hardCode1.setImageBitmap(imageBitmap);
         }
     }
 

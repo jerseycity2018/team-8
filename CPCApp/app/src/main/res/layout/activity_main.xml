@@ -55,19 +55,27 @@
                     android:id="@+id/asdakdakdkd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Charles A. Dana Discovery Center " />
+                    android:text="Charles A. Dana Discovery Center "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    app:srcCompat="@drawable/centralparkpic" />
+                    app:srcCompat="@drawable/centralparkpic"
+                    android:contentDescription="view of the central park lake" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Come to our very nice discovery center! We have lots of free food hahahah xD. Take a swim in our nice lake or take a boat to the island in the middle!" />
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:text="Come to our very nice discovery center! Or rent a boat and enjoy the different sites central park has to offer." />
             </LinearLayout>
 
             <LinearLayout
@@ -80,11 +88,16 @@
                     android:id="@+id/aasdas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Charles A. Dana Discovery Center " />
+                    android:text="Stone Bridge"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
 
                 <ImageView
                     android:id="@+id/hardcodedImage2"
                     android:layout_width="match_parent"
+                    android:contentDescription="tower landmark"
                     android:layout_height="300dp"
                     app:srcCompat="@drawable/centralparku" />
 
@@ -92,7 +105,9 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This is the great stone bridge of doom! Come see my good friends!" />
+                    android:padding="20dp"
+                    android:text="Enjoy the different landmarks our park has to offer." />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
