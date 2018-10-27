@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="754402d6-76bb-4a21-b35e-bceb761e9791" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DS_Store" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPCApp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CPCApp/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPCApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CPCApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPCApp/app/src/main/java/com/example/stanleypena/cpcapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/CPCApp/app/src/main/java/com/example/stanleypena/cpcapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPCApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CPCApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
