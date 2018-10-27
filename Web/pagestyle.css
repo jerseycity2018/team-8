@@ -8,6 +8,10 @@ div#title{
   text-align: center;
 }
 
-div#SocialMediaBoxRow{
+div#SocialMediaBox{
+  text-align: center;
+}
+
+div#MobileBox{
   text-align: center;
 }
