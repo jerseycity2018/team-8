@@ -9,7 +9,12 @@
 
     <!-- Clarifai Stuff -->
     <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
-
+    <!-- <style>
+      #map{
+        height:50%;
+        width:50%;
+      }
+    </style> -->
   </head>
 
 
@@ -71,6 +76,37 @@
               </div>
             </div>
           </div>
+
+          <h1>Google Map</h1>
+          <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.785091,-73.968285&markers=color:green%7Clabel:G%7C40.785091,-73.968285
+&markers=color:red%7Clabel:C%7C40.785091,-73.968285
+&key=AIzaSyCmjLBS51yAofRywlbjMXsckcv3_ds0KQc" > -->
+          <div id ="container">
+          </div id = "innerBox">
+            <div id ="map"></div>
+            <div id ="outerlimit"</div>
+          <div>
+        </div>
+
+          <script>
+            function initMap(){
+              const centralPark = {lat: 40.785091, lng: -73.968285};
+              const map = new google.maps.Map(document.
+                getElementById('map'),
+                {
+                  zoom: 13,
+                  center: centralPark
+                });
+              const marker = new google.maps.Marker({
+                position: centralPark,
+                map: map
+              });
+            };
+          </script>
+
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtL9bTgx-vO_3Hj8UbUtoLNAgJRWvNXPc&callback=initMap"></script>
+
         </div>
       </div>
     </div>

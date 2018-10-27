@@ -31,6 +31,18 @@ div#MobileBox{
 
 }
 
+  #container {
+    display: flex;
+    justify-content: space-between;
+}
+
+  #map{
+    order: 2;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+  }
+
 
 /* Card UI */
 .card {
