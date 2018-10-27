@@ -16,7 +16,7 @@
   </head>
 
 
-  <body onload="returnData()">
+  <body>
     <div id="PageContainer" class="container-fluid">
       <div id="FirstRow" class="row">
         <div id="NavigationBarContainer" class="col-sm-1">
@@ -32,7 +32,7 @@
           <div id="TitleRow"class="row">
             <div id="title" class="col-sm-12">
               <h1>Central Park Conservancy - Data Dashboard</h1> <br />
-              <button id="Retrieve" onclick="buttonClicked()">Retrieve</button>
+
               <textView id="data"></textView>
             </div>
           </div>
@@ -43,8 +43,7 @@
               <h2>Social Media</h2>
               <div class="row">
                 <div class="col-sm-12 card">
-                  User Engagement <br />
-                  18,000
+                  Today's Top Post
                 </div>
                 <div class="col-sm-12" style="height:20px;">
 
@@ -55,12 +54,14 @@
                        id="photo1" style="width: content-box; max-height: 300px; vertical-align: center;">
                   <p id="photo1txt">Oct 20th. 2018</p>
                 </div>
+                <div class="col-sm-12" style="height:20px;">
 
+                </div>
+                <div class="col-sm-12" style="height:20px;">
+                  <button id="clarifaiButton" onclick="returnData()">Scan Photo</button>
+                </div>
+                <div class="col-sm-12" style="height:20px;">
 
-                <div class="col-sm-12 card">
-                  <img src="https://www.centralpark.com/downloads/3367/download/ice-skating-in-central-park.jpe?cb=acb3e4dcca282bf1997957dda4b08255&w=-1"
-                       id="photo1" style="width: content-box; max-height: 300px; vertical-align: center;">
-                  <p id="photo1txt">Oct 20th. 2018</p>
                 </div>
 
               </div>
@@ -69,8 +70,29 @@
               <h2>Mobile</h2>
               <div class="row">
                 <div class="col-sm-12 card">
-                  User Engagement <br />
+                  Data Collected Today <br />
                 </div>
+                <div class="col-sm-12" style="height:20px;">
+                </div>
+                <div id="mobileData"class="col-sm-12 card" style="font-size:16px;">
+                  Central Park Baseball Field: 70 QR scans today. <br /> <br />
+                  Boating in Central Park: 54 QR scans today. <br /> <br />
+                  Wollman Rink: 12 QR scans today. <br /> <br />
+                </div>
+                <div class="col-sm-12" style="height:20px;">
+                </div>
+                <div id="mobileData"class="col-sm-12 card">
+                  Geo Location
+                </div>
+                <div class="col-sm-12" style="height:20px;">
+                </div>
+                <div id="mobileData"class="col-sm-12 card" style="font-size:16px;">
+                  Belvedere Castle: 130 visits today <br /> <br />
+                  Central Park Zoo: 203 visits today <br /> <br />
+                  Bethesda Terrace: 125 visits today <br /> <br />
+                </div>
+
+
               </div>
             </div>
           </div>
