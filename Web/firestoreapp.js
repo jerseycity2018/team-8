@@ -6,9 +6,10 @@ var config = {
   storageBucket: "jphack-21831.appspot.com",
   messagingSenderId: "893931299090"
 };
-
-// initializeApp command
 firebase.initializeApp(config);
+// initializeApp command
+
+
 var firestore = firebase.firestore();
 
 const docRef = firestore.collection("users").doc("VTpqXygWydQfF3lswb98");
