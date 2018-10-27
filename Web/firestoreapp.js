@@ -17,15 +17,26 @@ const settings = ({timestampsInSnapshots: true });
 const docRef = firestore.collection("users").doc("VTpqXygWydQfF3lswb98");
 
 
-const getUserFireStoreData = document.querySelector("#Retrieve");
-firestore.collection("users").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
 
-        //add this data to your div's textView
-        console.log(doc.data().name)
-        //console.log(`${doc.id} => ${doc.data()}`);
-    });
-});
+function buttonClicked(){
+  var dataDisplay = document.getElementById("data")
+  const getUserFireStoreData = document.querySelector("#Retrieve");
+  firestore.collection("users").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+
+          //add this data to your div's textView
+          console.log(doc.data().name)
+          dataDisplay.innerHTML = doc.data().name
+          //console.log(`${doc.id} => ${doc.data()}`);
+      });
+  });
+
+
+
+
+}
+
+
 
 // Event listener to get DB data
 // var Retrieve = document.getElementById("Retrieve")
