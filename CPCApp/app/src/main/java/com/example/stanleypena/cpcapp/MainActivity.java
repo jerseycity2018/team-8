@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.graphics.Bitmap;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button camera;
@@ -29,8 +31,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent urintent = new Intent(this, QRScanner.class);
             startActivity(urintent);
         } else if (v == findViewById(R.id.camerab)) {
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            startActivity(intent);
+            dispatchTakePictureIntent();
         }
     }
+
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
+    private void dispatchTakePictureIntent() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+        startActivity(takePictureIntent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+        }
+    }
+
 }
