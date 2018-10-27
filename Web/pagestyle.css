@@ -1,0 +1,13 @@
+div#NavigationBarContainer{
+  background-color: rgb(230, 233, 237);
+  text-align: center;
+  height: 100%;
+}
+
+div#title{
+  text-align: center;
+}
+
+div#SocialMediaBoxRow{
+  text-align: center;
+}
