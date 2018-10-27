@@ -2,6 +2,7 @@ div#NavigationBarContainer{
   background-color: rgb(230, 233, 237);
   text-align: center;
   height: 100%;
+  position: absolute;
 }
 
 div#title{
