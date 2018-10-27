@@ -15,6 +15,7 @@ var firestore = firebase.firestore();
 const docRef = firestore.collection("users").doc("VTpqXygWydQfF3lswb98");
 
 // Event listener to get DB data
+var Retrieve = document.getElementById("Retrieve")
 Retrieve.addEventListener("click", function() {
   docRef.get().then(function (doc) {
     if (doc && doc.exists) {
@@ -25,3 +26,5 @@ Retrieve.addEventListener("click", function() {
     // })
   })
 })
+var dataDisplay = document.getElementById("data")
+//dataDisplay.innerHTML =
