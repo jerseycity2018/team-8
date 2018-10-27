@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Init all buttons, find views etc.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -91,6 +92,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void userLogIn() {
         progressDialog.setMessage("Logging you in!");
         progressDialog.show();
+        // Sign in here!
         firebaseAuth.signInWithEmailAndPassword(userName.getText().toString().trim(),password.getText().toString().trim()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -109,5 +111,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
 
     }
+
 }
 
