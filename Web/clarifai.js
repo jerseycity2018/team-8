@@ -1,5 +1,5 @@
 let app = new Clarifai.App({
-    apiKey: config.cfKey
+    apiKey: keys.cfKey
 });
 
 function returnData() {

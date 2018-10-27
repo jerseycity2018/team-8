@@ -9,11 +9,14 @@
 
     <!-- Clarifai Stuff -->
     <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="clarifai.js"></script>
+
 
   </head>
 
 
-  <body>
+  <body onload="returnData()">
     <div id="PageContainer" class="container-fluid">
       <div id="FirstRow"class="row">
         <div id="NavigationBarContainer" class="col-sm-1">
@@ -57,8 +60,9 @@
                 </div>
                 <!-- Twitter Cards -->
                 <div class="col-sm-12 card">
-                  <img src="images/skating.jpg" style="width: content-box; max-height: 300px; vertical-align: center;">
-                  <p>Skating</p>
+                  <img src="https://images.unsplash.com/photo-1511195874866-3771d6434ddd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=531d52440cf62992a2cd11ad70fa7e74&auto=format&fit=crop&w=800&q=60"
+                       id="photo1" style="width: content-box; max-height: 300px; vertical-align: center;">
+                  <p id="photo1txt">Oct 20th. 2018</p>
                 </div>
               </div>
             </div>
