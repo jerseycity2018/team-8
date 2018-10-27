@@ -6,30 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".QRScanner">
 
-    <SurfaceView
-        android:id="@+id/cameraScan"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/qrTest"
+        android:layout_width="wrap_content"
         android:layout_height="300dp"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/puppy" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cameratext"
-        android:text="Please focus on QR code"
-        android:layout_below="@id/cameraScan"
-        android:gravity="center"
-        android:textSize="18sp"
-        />
     <Button
-        android:id="@+id/camerabutton"
+        android:id="@+id/scanButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cameratext"
+        android:layout_height="100dp"
+        android:layout_below="@id/qrTest"
         android:gravity="center"
-        android:text="click to scan"/>
-
-
+        android:text="click to scan" />
 
 
 </RelativeLayout>
