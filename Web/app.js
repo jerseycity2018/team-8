@@ -9,6 +9,7 @@
   };
   firebase.initializeApp(config);
 
+const db = firebase.firestore();
 // Require firestore
 const firebase = require("firebase");
 // Required for side-effects
@@ -17,13 +18,13 @@ require("firebase/firestore");
 
 // Initialize Google fireStore
 firebase.initializeApp({
-  apiKey: '### FIREBASE API KEY ###',
-  authDomain: '### FIREBASE AUTH DOMAIN ###',
-  projectId: '### CLOUD FIRESTORE PROJECT ID ###'
+  apiKey: '',
+  authDomain: 'jphack-21831.firebaseapp.com',
+  projectId: 'jphack-21831'
 });
 
 // Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
+
 
 // Disable deprecated features
 db.settings({
